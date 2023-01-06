@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Texturina', serif;
+    scroll-behavior: smooth;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #4d066e;
+    backdrop-filter: blur(10px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 100;
+    position: fixed;
+    padding-left: 1em;
+    padding-right: 6em;
+    
+}
+.logo{
+    width: 20%;
+    color: #fff;
+    justify-content: center;
+}
+.logo .fas{
+    color: #fff;
+    font-size: 25px;
+}
+
+.nav-links
+    {
+        display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding-top: 1vh;
+    }
+    .nav-links li a:hover{
+        background: #fff;
+        color: #4d066e;
+        border-radius: 10px;
+    }
+.nav-links a
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    color:  rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+/* .nav-links a::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: bottom right;
+  background-color: #fff;
+
+}
+.nav-links a:hover::after
+{
+  transform-origin:bottom left;
+  transform: scaleX(1);
+} */
+.burger
+{
+        display: none;
+        cursor: pointer;
+        margin-right: 2em;
+        float: right;
+}
+.burger div
+{
+    width: 25px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+body
+    {
+        overflow-x: hidden;
+    }
+
+    
+    
+    .nav-links li
+    {
+        opacity: 1;
+        list-style: none;
+        background: none;
+    }
+    .nav-links li a
+    {
+        background: none;
+        color:rgb(250, 248, 246) ;
+    }
+    .nav-active
+    {
+        transform: translateX(0%);
+    }
+    @keyframes nav{
+        from
+        {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to
+        {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        
+    }
+    /*container section*/
+    .container{
+        width: 200%;
+        display: flex;
+        flex-direction: row;
+    }
+    /* end of container section */
+   
+/* profile section */
+#profile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8vh ;
+
+}
+#profile .name{
+    width: 75%;
+    background-image:linear-gradient(#2e0242c9,#6b3186e1), url('images/laptop-2838917.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+.name p{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 100;
+}
+.name h2{
+    font-size:  96px;
+    font-weight: 4000;
+}
+#profile .profile{
+    width: 25%;
+    background-color: #4d066e;
+    display: flex;
+    flex-direction: column;
+}
+.propic
+{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+.profile .propic img{
+    margin-top: 2vh;
+    border-radius: 50%;
+    height:20vh;
+    width: 20vh;
+}
+.profile .hide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: #fff;
+    
+}
+
+.profile .contact{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile .contact p{
+    color: #fff;
+    margin-bottom: 1.5em;
+    font-size: 20px;
+}
+.profile .contact p a{
+    color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 20px;
+}
+/* end of profile section */
+
+/*---------------------------------*/
+
+/* about section */
+#about{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    background-color:#bc9fcc ;
+}
+/* end of about */

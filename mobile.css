@@ -1,0 +1,177 @@
+@media screen and (max-width: 1024px)
+{
+    .nav-links
+    {
+        width: 60%;
+    }
+    .contact form
+    {
+        margin-left: 15em;
+    }
+    .logo
+    {
+        margin: 0;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .profile{
+        flex-direction: column;
+    }
+    .photo{
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+    }
+    .photo div{
+        margin-top: 3em;
+        padding: 0;
+        display: block;
+        width: 80vw;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: 110% 130%;
+    }
+   
+    body
+    {
+        overflow-x: hidden;
+    }
+    .preloader
+    {
+        padding: 15em;
+    padding-left: 8em;
+    }
+    .logo img{
+        margin-top: 0;
+    }
+   
+    
+    .nav-links
+    {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 10vh;
+        
+    background: linear-gradient(to bottom,#4d066e,#5e3f6d);
+    backdrop-filter: blur(10px);
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li
+    {
+        opacity: 1;
+        
+        
+    }
+    .nav-links li a
+    {
+        color:rgb(250, 248, 246) ;
+    }
+  
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .burger
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        float: right;
+        margin-right: -5em;
+        
+    }
+    .burger .line1{
+        margin: 0;
+        width: 30px;
+    }
+    .burger .line2{
+    
+        width: 25px;
+    }
+    .burger .line3{
+        margin: 0;
+        width: 20px;
+    }
+    
+    
+    .about
+    {
+        height: 100vh;
+    }
+    .details
+    {
+        padding:0em;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    #profile{
+        flex-direction: column;
+        height: 80vh;
+    }
+    #profile .name{
+        display: none;
+        width: 100%;
+    }
+    .name p{
+        font-size: 18px;
+    }
+    .name h2{
+        font-size: 30px;
+    }
+    #profile .profile{
+        width: 100%;
+        height:75vh ;
+    }
+    .profile .contact{
+        height: vh;
+    }
+}
+.nav-active
+{
+    transform: translateX(0%);
+}
+@keyframes nav{
+    from
+    {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.toggle .line1
+{
+    background-color: #fff;
+    transform: rotate(-45deg) translate(-5px,9px);
+    width: 25px;
+
+}
+.toggle .line2
+{
+    opacity: 0;
+
+}
+.toggle .line3
+{
+    width: 25px;
+    background-color:#fff;
+    transform: rotate(45deg) translate(-5px,-9px);
+
+}
